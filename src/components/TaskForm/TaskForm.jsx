@@ -66,7 +66,7 @@ const TaskForm = ({ setTasks, editingTask, setEditingTask }) => {
       <textarea
         className="w-full border p-2 rounded"
         value={description}
-        placeholder="Descripción para tu tarea"
+        placeholder="Descripción para tu tarea (puede ser opcional)"
         onChange={(e) => setDescription(e.target.value)}
         maxLength={200}
       />
