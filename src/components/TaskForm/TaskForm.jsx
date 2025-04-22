@@ -59,7 +59,11 @@ const TaskForm = ({ setTasks, editingTask, setEditingTask }) => {
         placeholder="Título de la tarea"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
+        maxLength={50}
       />
+      <p className="text-sm text-gray-500 text-right mt-1">
+        {title.length}/50
+      </p>
 
       {/* Campo de la descripción */}
       <label className="block text-sm font-medium text-black-600">Descripción</label>
